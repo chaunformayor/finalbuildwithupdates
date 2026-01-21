@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://midwestinvestorservices.com/sitemap.xml

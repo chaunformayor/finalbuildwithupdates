@@ -1,0 +1,8 @@
+{
+  "name": "Midwest Investor Services",
+  "short_name": "MIS",
+  "icons": [],
+  "theme_color": "#18181b",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
