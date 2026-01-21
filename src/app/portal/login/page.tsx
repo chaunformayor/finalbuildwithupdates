@@ -6,13 +6,14 @@ export const metadata = {
   description: "Password-gated investor portal."
 };
 
-export default function PortalLogin({
+export default async function PortalLogin({
   searchParams
 }: {
-  searchParams: { error?: string; next?: string };
+  searchParams: Promise<{ error?: string; next?: string }>;
 }) {
-  const error = searchParams?.error === "1";
-  const nextPath = searchParams?.next || "/portal";
+  const sp = await searchParams;
+  const error = sp?.error === "1";
+  const nextPath = sp?.next || "/portal";
 
   return (
     <Container>
@@ -61,3 +62,4 @@ export default function PortalLogin({
     </Container>
   );
 }
+
